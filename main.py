@@ -3,8 +3,9 @@ from pygame.locals import *
 from sys import exit
 
 # https://coderslegacy.com/python/python-pygame-tutorial/
-# Initialize Pygame; must have line
 
+
+# Initialize Pygame; must have line
 pygame.init()
 
 # Top left (0,0), bottom right (300, 300)
