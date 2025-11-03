@@ -10,3 +10,5 @@ WHITE = (255, 255, 255)
 # Screen info
 SCREEN_WIDTH = 400
 SCREEN_HEIGHT = 600
+
+score = 0

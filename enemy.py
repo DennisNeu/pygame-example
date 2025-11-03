@@ -15,7 +15,8 @@ class Enemy(pygame.sprite.Sprite):
         if (self.rect.bottom > utils.SCREEN_HEIGHT):
             self.rect.top = 0
             self.rect.center = (randint(30, utils.SCREEN_WIDTH - 30), 0)
-    
+            utils.score += 1
+
     def draw(self, surface):
         surface.blit(self.image, self.rect)
 
