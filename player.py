@@ -21,9 +21,9 @@ class Player(pygame.sprite.Sprite):
         if self.rect.left > 0:
             if pressed_keys[K_LEFT]:
                 self.rect.move_ip(-5, 0)
-            if self.rect.right < utils.SCREEN_WIDTH:        
-                if pressed_keys[K_RIGHT]:
-                    self.rect.move_ip(5, 0)
- 
+        if self.rect.right < utils.SCREEN_WIDTH:        
+            if pressed_keys[K_RIGHT]:
+                self.rect.move_ip(5, 0)
+        
     def draw(self, surface):
         surface.blit(self.image, self.rect)
