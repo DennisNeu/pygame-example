@@ -8,6 +8,12 @@ from enemy import Enemy
 # https://coderslegacy.com/python/python-pygame-tutorial/
 
 
+def check_collision(player, enemy):
+    """Check for collision between player and enemy."""
+    if player.rect.colliderect(enemy.rect):
+        return True
+    return False
+
 # Initialize Pygame; must have line
 pygame.init()
 
@@ -31,6 +37,9 @@ while running:
             running = False
     P1.update()
     E1.move()
+    if check_collision(P1, E1):
+        running = False
+
      
     DISPLAYSURF.fill(utils.WHITE)
     P1.draw(DISPLAYSURF)
